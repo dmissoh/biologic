@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>quickstart.xhtml</title>
+  <link rel="stylesheet" href="shared.css" type="text/css" />
+  </head>
+
+<body>
+<h1>Welcome to BioLogic</h1>
+<h2>Quick start</h2>
+<p>This tutorial describes the main functionalities of this software.
+</p>
+
+<p>
+After steps I) and II) you are able to configure
+and run you first sequence. Steps III)-V) shows some advanced functionalities.
+</p>
+
+<img src="images/ToolbarAnnotated.jpg"/><br/>
+The picture above shows the toolbar of BioLogic. Following buttons are available:
+
+<ul>
+	<li>(1) The 'New Sequence View...'</li>
+	<li>(2) The 'Save' button</li>
+	<li>(3) The 'Set Key Bindings...' button</li>
+	<li>(4) The 'Export as CSV' button</li>
+</ul>
+
+<h3>I) Configure at least one event</h3>
+
+<h4>Define the events and define the hot keys to use to record them</h4>
+
+<p>First of all, you want to tell BioLogic which kind of event you want to record.<br/>
+You can either directly click on the <b>[Set Key Bindings...]</b> button <img src="../icons/keybinding.png"/> in the toolbar or access the same configuration page through
+using the menu <b>Window>Preferences</b>.<br/>
+</p>
+
+<p>
+<img src="images/preferences_page.png"/><br/>
+</p>
+
+<p>
+For you first run, just click on the <b>[New...]</b> button and than click on <b>[OK]</b> to store you first Event Key Binding setting.<br/>
+</p>
+
+<p>
+In this simple example, you create a new event that can be started using the keyboard key <b>[A]</b> and
+stopped using the keyboard key <b>[S]</b>.<br/> This is obviously not a punctual event, i.e. an event without duration.
+</p>
+
+<h4>Choose the time unit</h4>
+On the same preference page, you can choose the time unit that the system should use to measure time differences (e.g. for the CSV export).
+
+<h3>II) Record a sequence</h3>
+<p>
+<h4>Starting a sequence</h4>
+To start a new sequence with the event configurations you done in step I), click on the <b>[New Sequence View...]</b> button <img src="../icons/sequence.png"/>.<br/>
+The following dialog pop up:<br/>
+
+<p>
+<img src="images/start_sequence_dialog.png"/><br/>
+</p>
+
+<h4>Live and Recorded Mode</h4>
+
+Sequences can be started in a two different mode: <b>Live</b> and <b>Recorded</b>.<br/>
+In the <b>Live</b> mode, the current time is logged. In the <b>recorded</b> mode, a running sequence can be <b>paused</b>, and only the <b>elapsed</b> time is recorded.
+</p>
+
+<p>
+Enter a short description or click the [OK] button to use the default description.<br/>
+</p>
+
+
+<h4>Control the running sequence</h4>
+<p>s
+A new view is opened and the new sequence can now been started by clicking the start/stop button <img src="../icons/startSequence.png"/>.<br/>
+Now use the keys you define in step I) to start and end events (in this case the keys [A] and [S]).<br/>
+</p>
+
+<p>During the recording, the events are logged in the <b>Running events</b> view (located in the left panel of the application).</p>
+
+<p>
+<img src="images/running_events_view.png"/><br/>
+</p>
+
+<p>This view list all running event (i.e. the ones that havn't been closed) with their corresponding start and end hot keys.</p>
+
+<p>At the end of your recording sequence, terminate your sequence by clicking on the start/stop button <img src="../icons/startSequence.png"/> again.</p>
+
+<p>Every sequence is stored, and can be opened again by selecting it from the <b>Logs</b> view. This view is also located in the
+left panel of the application.</p>
+
+<p>
+<img src="images/log_view.png"/><br/>
+</p>
+
+<p>Actions in the toolbar of the <b>Log View</b> give you the possibility to <b>delete all log files</b>, <b>open the folder</b> where they are stored or <b>refresh</b> the view.</p>
+
+<h4>Running concurrent sequences</h4>
+<p>BioLogic gives you the possibility to record more than one sequences at the same time. You can toggle between those instances with the following shortcut <b>[Shift] + [Tab]</b>.</p>
+
+<h3>III) Generate a graphical representation of the sequence</h3>
+<p>
+Viewing the graphical representation of the new sequence is quite simple.
+Just click the following button <img src="../icons/proceed.png"/>.
+</p>
+
+<h3>III) Exporting a sequence</h3>
+<p>
+The sequence you previously recorded can be exported as a CSV-File (Comma Separated Values) which can easily been opened in Excel.<br/>
+Two type of exports are available and are accessible by clicking on the small down-arrow that is located close to the
+export button <img src="../icons/export_xsl.png"/>:
+
+<ul>
+	<li>Export log entries</li>
+	<li>Export grouped events</li>
+</ul>
+
+These commands are self explained. Just try them.
+
+</p>
+
+
+<h3>IV) Backup functionalities</h3>
+<p>BioLogic offers an simple backup mechanism to backup all your work and export the result as a
+compressed file (also known as zip files). By calling this command that is available over menu <b>Utilities>Backup</b>
+all sequences as well as the csv files you generate from them are exported.
+</p>
+
+</body>
+</html>
