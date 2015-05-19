@@ -10,3 +10,5 @@ The example above is a real life Use-Case where BioLogic has been successfully u
 
 At the Department of Behavioral Physiology & Sociobiology (University of Wuerzburg), BioLogic has been tested for the first time during experiments performed with bumble bees.
 BioLogic allows the user to record, log, visualize, export and backup events collected during an experimental run.
+
+For more details see: http://swarmy.free.fr/wordpress/?p=139
